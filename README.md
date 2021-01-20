@@ -4,23 +4,23 @@
 
 > IO是什么? input、output
 
-![1610961009837](tree\main\imgs\1610961009837.png)
+![1610961009837](blob\main\imgs\1610961009837.png)
 
 - 硬盘交IO
 
-![1610961054681](tree\main\imgs\1610961054681.png)
+![1610961054681](blob\main\imgs\1610961054681.png)
 
 - 浏览器IO
 
-![1610961067823](tree\main\imgs\1610961067823.png)
+![1610961067823](blob\main\imgs\1610961067823.png)
 
 java必须通过操作系统与硬件进行IO操作
 
-![1610961189763](tree\main\imgs\1610961189763.png)
+![1610961189763](blob\main\imgs\1610961189763.png)
 
 其实质是与操作系统的内核空间进行交换数据
 
-![1610961429175](tree\main\imgs\1610961429175.png)
+![1610961429175](blob\main\imgs\1610961429175.png)
 
 方法一：阻塞式IO
 
@@ -36,7 +36,7 @@ java必须通过操作系统与硬件进行IO操作
 
 4. 把内核空间缓冲上区的数据复制到用户空间
 
-   ![1610962239661](tree\main\imgs\1610962239661.png)
+   ![1610962239661](blob\main\imgs\1610962239661.png)
 
    ​		同步阻塞IO模型源于《UNIX网络编程卷1：套接字联网API（第3版）》
 
@@ -90,7 +90,7 @@ public class BioServer {
 
 打开cmd调试
 
-![1611021230045](tree\main\imgs\1611021230045.png)
+![1611021230045](blob\main\imgs\1611021230045.png)
 
 使用线程池
 
@@ -209,7 +209,7 @@ public class ClientHandler implements Runnable {
 
 
 
-![1611022038370](tree\main\imgs\1611022038370.png)
+![1611022038370](blob\main\imgs\1611022038370.png)
 
 方法2 read、 recvfrom同步非阻塞
 
@@ -217,7 +217,7 @@ public class ClientHandler implements Runnable {
 - (2)Thread会主动不断地询问内核空间,数据有没有准备好
 - (3)如果内核空间数据准备好了,那么 Thread就会将数据从内核空间复制到用户空间【阻塞】
 
-![1611022532984](tree\main\imgs\1611022532984.png)
+![1611022532984](blob\main\imgs\1611022532984.png)
 
 ​					同步非阻塞IO模型源于《UNIX网络编程卷1：套接字联网API（第3版）》
 
@@ -245,7 +245,7 @@ JDK1.4：
 
 java.io+socket+处理多个客户端的请求:
 
-![1611022715673](tree\main\imgs\1611022715673.png)
+![1611022715673](blob\main\imgs\1611022715673.png)
 
 ​					同步IO阻塞模型源于《UNIX网络编程卷1：套接字联网API（第3版）》
 
@@ -369,11 +369,11 @@ netty:本质就是对NIO的封装和优化
 
 jdk1.7之后出现 NIO2并不是异步NIO,是伪异步NIO
 
-![1611129317983](tree\main\imgs\1611129317983.png)
+![1611129317983](blob\main\imgs\1611129317983.png)
 
 下面是异步NIO
 
-![1611023388670](tree\main\imgs\1611023388670.png)
+![1611023388670](blob\main\imgs\1611023388670.png)
 
 ​			异步IO模型源于《UNIX网络编程卷1：套接字联网API（第3版）》
 
