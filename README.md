@@ -1,6 +1,11 @@
 # BioToNio
+
+
+[githup地址]: https://github.com/wskvfhprrk/BioToNio
+[视频地下]: https://live.csdn.net/room/weixin_48013460/sKuDf3uE?utm_source=1181338978
+
+
 从BIO到NIO的深化
-githup地址 https://github.com/wskvfhprrk/BioToNio 
 # java BIO到NIO的演变
 
 > IO是什么? input、output
